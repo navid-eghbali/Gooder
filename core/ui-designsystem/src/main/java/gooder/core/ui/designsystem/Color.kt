@@ -1,0 +1,56 @@
+package gooder.core.ui.designsystem
+
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.lightColorScheme
+import androidx.compose.ui.graphics.Color
+
+val GooderLightColors = lightColorScheme(
+    primary = Color(0xff00658b),
+    onPrimary = Color.White,
+    primaryContainer = Color(0xffc5e7ff),
+    onPrimaryContainer = Color(0xff001e2d),
+    secondary = Color(0xff00687a),
+    onSecondary = Color.White,
+    secondaryContainer = Color(0xffadecff),
+    onSecondaryContainer = Color(0xff001f26),
+    tertiary = Color(0xff006a63),
+    onTertiary = Color.White,
+    tertiaryContainer = Color(0xff72f7ea),
+    onTertiaryContainer = Color(0xff00201d),
+    error = Color(0xffba1a1a),
+    onError = Color.White,
+    errorContainer = Color(0xffffdad6),
+    onErrorContainer = Color(0xff410002),
+    background = Color(0xfff3feff),
+    onBackground = Color(0xff002022),
+    surface = Color(0xfff3feff),
+    onSurface = Color(0xff002022),
+    outline = Color(0xff71787e),
+    surfaceVariant = Color(0xffdde3ea),
+    onSurfaceVariant = Color(0xff41484d),
+)
+val GooderDarkColors = darkColorScheme(
+    primary = Color(0xff7ed0ff),
+    onPrimary = Color(0xff00344a),
+    primaryContainer = Color(0xff004c6a),
+    onPrimaryContainer = Color(0xffc5e7ff),
+    secondary = Color(0xff56d6f5),
+    onSecondary = Color(0xff003641),
+    secondaryContainer = Color(0xff004e5d),
+    onSecondaryContainer = Color(0xffadecff),
+    tertiary = Color(0xff51dbce),
+    onTertiary = Color(0xff003733),
+    tertiaryContainer = Color(0xff00504a),
+    onTertiaryContainer = Color(0xff72f7ea),
+    error = Color(0xffffb4ab),
+    onError = Color(0xff690005),
+    errorContainer = Color(0xff93000a),
+    onErrorContainer = Color(0xffffdad6),
+    background = Color(0xff002022),
+    onBackground = Color(0xff70f5ff),
+    surface = Color(0xff002022),
+    onSurface = Color(0xff70f5ff),
+    outline = Color(0xff8b9297),
+    surfaceVariant = Color(0xff41484d),
+    onSurfaceVariant = Color(0xffc1c7cd),
+)
