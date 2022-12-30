@@ -31,6 +31,7 @@ android {
 dependencies {
     implementation(project(":core:ui-compose"))
     implementation(project(":core:ui-designsystem"))
+    implementation(project(":core:ui-resources"))
 
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui.ui)

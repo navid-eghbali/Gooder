@@ -17,5 +17,6 @@ rootProject.name = "Gooder"
 include(
     ":app",
     ":core:ui-compose",
-    ":core:ui-designsystem"
+    ":core:ui-designsystem",
+    ":core:ui-resources"
 )
