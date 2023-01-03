@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="NightAdjusted.Theme.Gooder" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
-    </style>
+    <style name="Platform.Theme.Gooder" parent="android:Theme.Material.Light.NoActionBar" />
 
-    <style name="PlatformAdjusted.Theme.Gooder" parent="NightAdjusted.Theme.Gooder">
+    <style name="Theme.Gooder" parent="Platform.Theme.Gooder">
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/nav_bar_scrim</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">@bool/use_light_nav_bar
+        </item>
+        <item name="android:windowLightStatusBar">@bool/use_light_status_bar</item>
     </style>
-
-    <style name="Theme.Gooder" parent="PlatformAdjusted.Theme.Gooder" />
 </resources>
