@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -29,9 +31,14 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:ui-compose"))
-    implementation(project(":core:ui-designsystem"))
-    implementation(project(":core:ui-resources"))
+    implementation(projects.base)
+    implementation(projects.core.uiCompose)
+    implementation(projects.core.uiDesignsystem)
+    implementation(projects.core.uiResources)
+
+    implementation(projects.shared.coreDi)
+
+    implementation(projects.shared.network.implementation)
 
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui.ui)
@@ -40,4 +47,7 @@ dependencies {
     implementation(libs.androidx.compose.foundation.foundation)
     implementation(libs.androidx.compose.material3.material3)
     implementation(libs.androidx.activity.compose)
+
+    implementation(libs.hilt.library)
+    kapt(libs.hilt.compiler)
 }
